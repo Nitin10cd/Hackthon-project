@@ -1,0 +1,178 @@
+/* Base Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container */
+.report-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease-in-out;
+}
+
+.report-container:hover {
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.report-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Sections */
+.report-section {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.report-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Subtitles */
+.report-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 12px;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+}
+
+/* Strengths & Weaknesses */
+.report-list-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.report-list-box {
+  flex: 1;
+  background: #f0faff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.report-list-box:hover {
+  background: #e3f2fd;
+}
+
+.report-list-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.report-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.report-list li {
+  font-size: 16px;
+  padding: 8px 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.report-list li:hover {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+.report-list li::before {
+  content: "•";
+  color: #007bff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Overall Rating */
+.report-rating {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff9800;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(255, 152, 0, 0.1), rgba(255, 193, 7, 0.2));
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Button Styling */
+.report-button-container {
+  text-align: center;
+}
+
+.report-home-button {
+  background: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.report-home-button:hover {
+  background: #0056b3;
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .report-container {
+      padding: 20px;
+      margin: 25px;
+  }
+
+  .report-title {
+      font-size: 24px;
+  }
+
+  .report-subtitle {
+      font-size: 20px;
+  }
+
+  .report-list-container {
+      flex-direction: column;
+  }
+
+  .report-rating {
+      font-size: 22px;
+  }
+
+  .report-home-button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
